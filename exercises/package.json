@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage --watchAll"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "jsdom",
+    "verbose": true
   },
-  "author": "stephen grider",
+  "devDependencies": {
+    "jest": "^27.4.5"
+  },
+  "author": "francomac",
   "license": "ISC"
 }
